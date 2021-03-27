@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Header */
+header {
+    display: flex;
+    background-color: #404040;
+    padding: 20px 35px; 
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+
+}
+header h1 {
+    font-weight: bold;
+    margin: 0 auto 30px auto;
+    font-size: 36px;
+    text-align: center;
+    color: white;
+}
+header nav {
+    margin: 7px 0;
+}
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+header nav ul a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+}
+/* --Body-- */
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+/* About Me Section */
+#main-bio p {
+    margin: 0 auto 30px auto;
+    left: 1000px;
+}
+/* Work Section */
+#work-info {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 15px 0;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.work {
+    display:flex;
+    align-items: flex-end;
+    padding-bottom: 25px;
+    margin: 0 auto;
+}
+.work:first-child {
+    flex-basis: 100%;
+}
+#runbuddy-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+/* Contact Me Section */
+#contact-info a {
+    color: blue;
+}
