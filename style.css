@@ -20,6 +20,11 @@ header h1 {
     text-align:justify;
     color: white;
 }
+header h1 a {
+    color: white;
+    text-decoration: none;
+
+}
 header nav {
     display: flex;
 }
@@ -40,6 +45,7 @@ header nav ul a {
 /* --Body-- */
 body {
     font-family: Helvetica, Arial, sans-serif;
+    background-color: rgba(2, 62, 2, 0.555)
 }
 /* About Me Section */
 #main-bio {
@@ -47,21 +53,21 @@ body {
     flex-direction: column;
     align-items: center; 
     justify-content: center;
-    padding: 15px 0;
+    padding: 15px 15px;
     background-image: url("./assets/images/spiderWeb.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    color: white;
 }
 #main-bio p {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto 30px auto;
     left: 1000px;
-    padding: 100px;
+    padding: 50px;
     color: white;
     font-size: 1.85vw;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 #bio-image {
     margin: 100px;
@@ -69,9 +75,10 @@ body {
 /* Work Section */
 #work-info {
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    align-items: stretch;
+    align-items: center; 
+    justify-content: center;
     justify-content: space-between;
     margin: 20px 0;
     padding: 15px 0;
@@ -79,6 +86,7 @@ body {
 #work-info h2 {
     text-align: center;
     margin: 20px auto;
+    color: white;
 }
 .flex-container {
     display: flex;
@@ -92,19 +100,50 @@ body {
     margin: 0 auto;
 
 }
-.work:first-child {
+/* .work:first-child {
     flex-basis: 100%;
-}
+} */
 #runbuddy-image {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
 }
+.work a:hover {
+    border-color: ;
+}
+
 /* Contact Me Section */
-#contact-info h2 {
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+footer h2 {
+    text-align: center;
+    color: white;
+}
+    
+#contact-info ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
     margin: 20px auto;
+    color: white;
+}
+
+#contact-info ul li {
+    margin-top: 10px;
+    border:1px solid grey;
+}
+
+li:first-child {
+    margin-top:0;
 }
 #contact-info a {
-    color: blue;
+    color: greenyellow;
 }
+
