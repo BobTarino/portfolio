@@ -47,7 +47,6 @@ body {
     flex-direction: column;
     align-items: center; 
     justify-content: center;
-    margin: 20px 0;
     padding: 15px 0;
     background-image: url("./assets/images/spiderWeb.jpg");
     background-size: cover;
@@ -60,6 +59,9 @@ body {
     margin: 0 auto 30px auto;
     left: 1000px;
     padding: 100px;
+    color: white;
+    font-size: 1.85vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 #bio-image {
     margin: 100px;
@@ -74,6 +76,10 @@ body {
     margin: 20px 0;
     padding: 15px 0;
 }
+#work-info h2 {
+    text-align: center;
+    margin: 20px auto;
+}
 .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -84,6 +90,7 @@ body {
     align-items: flex-end;
     padding-bottom: 25px;
     margin: 0 auto;
+
 }
 .work:first-child {
     flex-basis: 100%;
@@ -95,6 +102,9 @@ body {
     width: 50%;
 }
 /* Contact Me Section */
+#contact-info h2 {
+    margin: 20px auto;
+}
 #contact-info a {
     color: blue;
 }
