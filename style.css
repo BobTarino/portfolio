@@ -98,21 +98,25 @@ body {
     align-items: flex-end;
     padding-bottom: 25px;
     margin: 0 auto;
-
 }
 /* .work:first-child {
     flex-basis: 100%;
 } */
+
 #runbuddy-image {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
 }
-.work a:hover {
-    border-color: ;
+#runbuddy-image:hover {
+    opacity: 0.5;
+    
 }
-
+#placeholder-image:hover {
+    opacity: 0.5;
+}
+    
 /* Contact Me Section */
 footer {
     display: flex;
@@ -146,4 +150,103 @@ li:first-child {
 #contact-info a {
     color: greenyellow;
 }
+figcaption {
+    flex-wrap: flex;
+    color: white;
+    font-size: small;
+}
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+        justify-content: left;
+        position: relative;
+      }
+    
+    header h1 {
+        width: 100%;
+        text-align: left;
+      }
+    
+    header nav ul {
+        margin: auto ;
+        width: 100%;
+        justify-content: center;
+      }
+    
+    header nav ul li a {
+        font-size: 12px;
+        padding: 4px;
+      }
+    
+    footer h2, footer div {
+        text-align: center;
+        width: 100%;
+      }
+      }
+    .section h2 {
+        width: 80%;
+      }
+      
+    #work-info {
+        flex: 0 70%;
+      }
+      
+    #contact-info {
+        flex: 1 100%;
+      }
+  
 
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    section {
+        padding: 30px 15px;
+    }
+    .step h3 {
+        flex: 1 100%;
+        text-align: center;
+      }
+    
+    .step-info {
+        flex: 2 100%;
+        text-align: center;
+        justify-content: center;
+      }
+    
+    #placeholder-image {
+        flex: 0 32%;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+    
+    figcaption {
+        flex: 100%;  
+      }
+}
+  
+/* MEIDA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    #main-bio {
+        width: 100%;
+    }
+
+    p {
+        width: 100%;
+    }
+
+    #work-info {
+        width: 100%;
+    }
+
+    #contact-info {
+        text-align: center;
+    }
+
+    #contact-info > * {
+        flex: 0 100%;
+    }
+    header h1 {
+        float: left;
+    }
+}
+ 
