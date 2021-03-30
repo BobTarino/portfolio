@@ -201,17 +201,6 @@ figcaption {
     section {
         padding: 30px 15px;
     }
-    .step h3 {
-        flex: 1 100%;
-        text-align: center;
-      }
-    
-    .step-info {
-        flex: 2 100%;
-        text-align: center;
-        justify-content: center;
-      }
-    
     #placeholder-image {
         flex: 0 32%;
         margin-right: 0;
@@ -236,6 +225,7 @@ figcaption {
 
     #work-info {
         width: 100%;
+        display: inline-block;
     }
 
     #contact-info {
@@ -247,6 +237,10 @@ figcaption {
     }
     header h1 {
         float: left;
+    }
+    #contact-info {
+        align-items: center;
+        display: inline-flex;
     }
 }
  
